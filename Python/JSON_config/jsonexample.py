@@ -17,7 +17,7 @@ print("ORIGINAL dict_data")
 print(dict_data)
 print("")
 with open('list_example.json', 'w') as outfile:
-    json.dump(list_data, outfile)
+    json.dump(list_data, outfile, indent=4)
 
 try:
     with open('list_example.json') as json_data:
@@ -31,7 +31,7 @@ except:
 imported_data=[] #clearing it for second example
 
 with open('dict_example.json', 'w') as outfile:
-    json.dump(dict_data, outfile)
+    json.dump(dict_data, outfile, indent=4)
 
 try:
     with open('dict_example.json') as json_data:
